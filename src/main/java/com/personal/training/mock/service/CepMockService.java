@@ -1,6 +1,8 @@
 package com.personal.training.mock.service;
 
+import org.springframework.stereotype.Service;
 
+@Service
 public class CepMockService {
     private static final String MOCK_JSON =
             "[{" +

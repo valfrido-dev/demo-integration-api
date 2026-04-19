@@ -1,0 +1,15 @@
+#version: '3'
+services:
+  demoIntegrationApi:
+    image: demo-integration-api
+    build:
+      context: ..
+      dockerfile: ./docker/Dockerfile
+    ports:
+      - 8080:8080
+    environment:
+      - DEFAULT_APP_KEY=${APP_CONSUMER_KEY}
+      - DEFAULT_APP_OWNER=${APP_CONSUMER_OWNER}
+      - DEFAULT_APP_LIMIT=${APP_CONSUMER_LIMIT}
+      #      - SERVER_SERVLET_CONTEXT_PATH=/api
+      - LOGGING_LEVEL_ORG_MONGODB_DRIVER=DEBUG

@@ -1,22 +1,22 @@
 package com.personal.training.consumer.dto;
 
 public class CepDTO {
-    private String numero;
+    private long numero;
     private String endereco;
     private String municipio;
     private String estado;
 
     public CepDTO() {}
 
-    public CepDTO(String numero, String endereco, String municipio, String estado) {
+    public CepDTO(long numero, String endereco, String municipio, String estado) {
         this.numero = numero;
         this.endereco = endereco;
         this.municipio = municipio;
         this.estado = estado;
     }
 
-    public String getNumero() { return numero; }
-    public void setNumero(String numero) { this.numero = numero; }
+    public long getNumero() { return numero; }
+    public void setNumero(long numero) { this.numero = numero; }
 
     public String getEndereco() { return endereco; }
     public void setEndereco(String endereco) { this.endereco = endereco; }

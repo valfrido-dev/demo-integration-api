@@ -1,6 +1,8 @@
 package com.personal.training.mock.service;
 
+import org.springframework.stereotype.Service;
 
+@Service
 public class CidadesMockService {
     private static final String MOCK_XML = """
         <List>
