@@ -14,6 +14,8 @@ e retorná-las agrupadas. Por exemplo ao consultar um CEP no endpoint de consult
 `</api/ceps/find>` ele retorna além das informações do CEP, algumas informações
 sobre o município ao qual pertence o CEP consultado, como população.
 
+O projeto foi proposto como um teste para solução de integração de API.
+
 ## Skills
 ![Static Badge](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![Static Badge](https://img.shields.io/badge/maven-2496ED?style=for-the-badge)
