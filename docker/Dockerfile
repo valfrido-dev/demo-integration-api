@@ -8,7 +8,8 @@ RUN mkdir /opt/app
 WORKDIR /opt/app
 
 # Copy the built jar file into the container
-COPY ../target/demo-integration-api-0.0.1-SNAPSHOT.jar app.jar
+ARG JAR_VERSION
+COPY ../target/demo-integration-api-${JAR_VERSION}.jar app.jar
 
 # Expose port 8080
 EXPOSE 8080
