@@ -58,4 +58,8 @@ Após sucesso do comando anterior executar:
 Utilizar uma ferramenta de testes de API para interagir com o projeto, como o `<postman>`.
 
 - O acesso aos endpoints requer autorização via `<APP-KEY>`.
+- Ao executar a aplicação pela primeira vez ele gera o cadastrado em memória
+do `<APP-KEY>` que é configura através da variável de ambiente `APP_CONSUMER_KEY`.
+- O valor da variável `APP_CONSUMER_KEY` adicionado ao arqivo `<.env>` deve ser
+utilizada para passar no parâmetro `<APP-KEY>` via `<HEADER>` da requisição.
 - O projeto expõe os endpoints `</api/ceps/list>` e `</api/ceps/find?cep=123456>`.
